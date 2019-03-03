@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <a href="index.html"><img src="images/Suzy Liu.jpg" alt="Go to Homepage" width="80"></a>
+    <!-- Creating a clickable image - uses an image to link to the home page -->
+
+    <h1>My Contact Details</h1>
+
+    <table>
+    <!-- Create a table to make it structure better & prettier -->
+      <tr>
+        <td>Email:</td>
+        <td><a href="mailto:suzy@happymail.com">suzy@happymail.com</a></td>
+        <!-- a href: Creating an email link that open in the user's email program
+        to allow them to send a new email. -->
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td><a href="tel:0416123456">0416 123 456</a></td>
+        <!-- a href: Creating a phone link -->
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td>Unit 123, 456 Happy Rd, Carlton VIC 3053</td>
+      </tr>
+    </table>
+    <hr>
+    <!-- Form -->
+    <form action="mailto:suzy@happymail.com" method="post" enctype="text/plain">
+    <!-- action - mailto:
+    enctype means encoding type - text/plain means it's readable without %20& etc. -->
+    <div>
+      <label>Your Name:</label>
+      <input type="text" name="yourName" value="">
+      <!-- give the input a name - click on Submit and see the results -->
+    </div>
+    <div>
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value="">
+    </div>
+    <div>
+      <label>Your Message:</label>
+    </div>
+    <div>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea>
+      <!-- row and cols decide how tall and wide your text area is on the webpage -->
+    </div>
+    <div>
+      <label>Do you want to sign up to the email list?</label>
+      <input type="checkbox">
+    </div>
+    <input type="submit" name="">
+    </form>
+
+  </body>
+</html>
